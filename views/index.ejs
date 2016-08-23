@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Passport</title>
+	</head>
+	<body>
+		<% if (!isAuthenticated) { %>
+			<a href="/login">Log In Plox</a>
+		<% } else { %>
+			Hello, <%= user.name %>!
+			<a href="/logout">Log Out</a>
+		<% } %>
+	</body>
+</html>
